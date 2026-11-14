@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title">
+  <title id="title">Ảnh minh họa phòng trọ</title>
+  <defs>
+    <linearGradient id="wall" x2="0" y2="1">
+      <stop stop-color="#f8f3eb"/>
+      <stop offset="1" stop-color="#e9ddce"/>
+    </linearGradient>
+    <linearGradient id="floor" x2="0" y2="1">
+      <stop stop-color="#cba982"/>
+      <stop offset="1" stop-color="#a97d55"/>
+    </linearGradient>
+    <linearGradient id="window" x2="1" y2="1">
+      <stop stop-color="#c9e6ef"/>
+      <stop offset="1" stop-color="#8ab6c7"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#wall)"/>
+  <path d="M0 376 800 330v170H0Z" fill="url(#floor)"/>
+  <rect x="76" y="58" width="218" height="204" rx="5" fill="#fff" stroke="#ad9d8c" stroke-width="10"/>
+  <rect x="91" y="73" width="188" height="174" fill="url(#window)"/>
+  <path d="M185 73v174M91 159h188" stroke="#fff" stroke-width="8"/>
+  <path d="m92 204 62-55 43 40 35-30 47 49v39H92Z" fill="#84a989" opacity=".8"/>
+  <rect x="548" y="84" width="164" height="232" rx="4" fill="#d9c4a8"/>
+  <rect x="569" y="103" width="122" height="194" fill="#f3e7d5"/>
+  <circle cx="672" cy="201" r="6" fill="#ad865d"/>
+  <rect x="346" y="288" width="354" height="102" rx="12" fill="#d8c7b5"/>
+  <rect x="367" y="269" width="310" height="75" rx="28" fill="#f8f5ef"/>
+  <rect x="384" y="276" width="120" height="53" rx="18" fill="#a9c5c6"/>
+  <rect x="521" y="276" width="135" height="53" rx="18" fill="#e1b78f"/>
+  <path d="m370 381-10 87m287-87 10 87" stroke="#795b43" stroke-width="12" stroke-linecap="round"/>
+  <rect x="64" y="341" width="148" height="13" rx="6" fill="#8f694a"/>
+  <path d="M105 339v-65m0 21c-36-17-35-42-10-47 20 9 20 27 10 47Zm0 10c34-25 55-16 46 7-14 17-31 13-46-7Z" fill="#6f9974"/>
+  <path d="M80 341h53l-7 55H87Z" fill="#c47e59"/>
+  <rect x="0" y="0" width="800" height="500" fill="#fff" opacity=".06"/>
+</svg>

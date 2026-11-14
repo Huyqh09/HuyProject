@@ -1,0 +1,139 @@
+{
+  "planHash": "2a0a1d7c0ef8abc4d57a93b4a8bea94bd23c3f51fcaf55f4d1ee27241690570a",
+  "phase": "standalone",
+  "recordedAtUtc": "2026-11-14T01:02:40.8444668Z",
+  "retryCount": 4,
+  "resetBaseline": false,
+  "complete": true,
+  "result": {
+    "setupSucceeded": true,
+    "setupDurationMs": 0,
+    "setupFailureOutput": null,
+    "assertions": [
+      {
+        "name": "production-build",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E client@0.1.0 build\r\n\u003E react-scripts build\r\n\r\n(node:18420) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead\r\n(Use \u0060node --trace-deprecation ...\u0060 to show where the warning was created)\r\nCreating an optimized production build...\r\nBrowserslist: caniuse-lite is outdated. Please run:\r\n  npx update-browserslist-db@latest\r\n  Why you should do it regularly: https://github.com/browserslist/update-db#readme\r\nBrowserslist: caniuse-lite is outdated. Please run:\r\n  npx update-browserslist-db@latest\r\n  Why you should do it regularly: https://github.com/browserslist/update-db#readme\r\nCompiled with warnings.\r\n\r\n[eslint] \r\nsrc\\App.js\r\n  Line 18:6:  React Hook useEffect has a missing dependency: \u0027dispatch\u0027. Either include it or remove the dependency array  react-hooks/exhaustive-deps\r\n  Line 24:6:  React Hook useEffect has a missing dependency: \u0027dispatch\u0027. Either include it or remove the dependency array  react-hooks/exhaustive-deps\r\n\r\nsrc\\components\\MapView.js\r\n  Line 37:8:  React Hook useEffect has a missing dependency: \u0027center\u0027. Either include it or remove the dependency array  react-hooks/exhaustive-deps\r\n\r\nsrc\\components\\RelatedPost.js\r\n  Line 13:8:  React Hook useEffect has a missing dependency: \u0027dispatch\u0027. Either include it or remove the dependency array  react-hooks/exhaustive-deps\r\n\r\nsrc\\containers\\Public\\Header.js\r\n  Line 23:8:  React Hook useCallback has a missing dependency: \u0027navigate\u0027. Either include it or remove the dependency array                             react-hooks/exhaustive-deps\r\n  Line 33:9:  React Hook useEffect has a complex expression in the dependency array. Extract it to a separate variable so it can be statically checked  react-hooks/exhaustive-deps\r\n\r\nsrc\\containers\\Public\\Home.js\r\n  Line 6:10:  \u0027useDispatch\u0027 is defined but never used  no-unused-vars\r\n\r\nsrc\\containers\\Public\\Login.js\r\n  Line 26:8:  React Hook useEffect has a missing dependency: \u0027navigate\u0027. Either include it or remove the dependency array  react-hooks/exhaustive-deps\r\n\r\nsrc\\containers\\Public\\Navigation.js\r\n  Line 1:28:  \u0027useState\u0027 is defined but never used                                                                         no-unused-vars\r\n  Line 17:8:  React Hook useEffect has a missing dependency: \u0027dispatch\u0027. Either include it or remove the dependency array  react-hooks/exhaustive-deps\r\n\r\nsrc\\containers\\Public\\Pagination.js\r\n  Line 23:8:  React Hook useEffect has a missing dependency: \u0027currentPage\u0027. Either include it or remove the dependency array  react-hooks/exhaustive-deps\r\n\r\nsrc\\containers\\Public\\Rental.js\r\n  Line 2:10:  \u0027text\u0027 is defined but never used  no-unused-vars\r\n\r\nsrc\\containers\\System\\ManagePost.js\r\n  Line 19:8:  React Hook useEffect has a missing dependency: \u0027dispatch\u0027. Either include it or remove the dependency array  react-hooks/exhaustive-deps\r\n\r\nsrc\\ultils\\Common\\getCodes.js\r\n  Line 6:9:   \u0027arr\u0027 is assigned a value but never used  no-unused-vars\r\n  Line 24:9:  \u0027arr\u0027 is assigned a value but never used  no-unused-vars\r\n\r\nSearch for the keywords to learn more about each warning.\r\nTo ignore, add // eslint-disable-next-line to the line before.\r\n\r\nFile sizes after gzip:\r\n\r\n  152.84 kB (\u002B50 B)  build\\static\\js\\main.f2efd3aa.js\r\n  5.33 kB            build\\static\\css\\main.73cafa3a.css\r\n\r\nThe project was built assuming it is hosted at /.\r\nYou can control this with the homepage field in your package.json.\r\n\r\nThe build folder is ready to be deployed.\r\nYou may serve it with a static server:\r\n\r\n  npm install -g serve\r\n  serve -s build\r\n\r\nFind out more about deployment here:\r\n\r\n  https://cra.link/deployment\r\n\r\n",
+        "durationMs": 43902
+      },
+      {
+        "name": "tests-pass",
+        "kind": "process",
+        "verificationMethod": "test-results",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E client@0.1.0 test\r\n\u003E react-scripts test --watchAll=false\r\n\r\nPASS src/ultils/Common/formatVietnameseToString.test.js\r\n  formatVietnameseToString\r\n    \u221A creates a route-safe slug from Vietnamese titles with punctuation (1 ms)\r\n    \u221A returns an empty string for an empty value (1 ms)\r\n    \u221A keeps the previous posts when a refresh fails\r\n    \u221A parses repeated price and area bounds without treating display labels as keywords\r\n\r\nTest Suites: 1 passed, 1 total\r\nTests:       4 passed, 4 total\r\nSnapshots:   0 total\r\nTime:        3.496 s\r\nRan all test suites.\r\n",
+        "durationMs": 7334,
+        "testResults": {
+          "testFramework": "jest",
+          "runnerDetectedFrom": "output_banner",
+          "testsTotal": 4,
+          "testsPassed": 4,
+          "testsFailed": 0,
+          "testsSkipped": 0,
+          "parseFailed": false
+        }
+      },
+      {
+        "name": "frontend-serves-home",
+        "kind": "http-probe",
+        "verificationMethod": "http-status",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": null,
+        "outputSample": "HTTP 200\n\u003C!DOCTYPE html\u003E\n\u003Chtml lang=\u0022en\u0022\u003E\n  \u003Chead\u003E\n    \u003Cmeta charset=\u0022utf-8\u0022 /\u003E\n    \u003Clink rel=\u0022icon\u0022 href=\u0022/favicon.ico\u0022 /\u003E\n    \u003Cmeta name=\u0022viewport\u0022 content=\u0022width=device-width, initial-scale=1\u0022 /\u003E\n    \u003Cmeta name=\u0022theme-color\u0022 content=\u0022#000000\u0022 /\u003E\n    \u003Cmeta\n      name=\u0022description\u0022\n      content=\u0022Web site created using create-react-app\u0022\n    /\u003E\n    \u003Clink rel=\u0022apple-touch-icon\u0022 href=\u0022/logo192.png\u0022 /\u003E\n    \u003C!--\n      manifest.json provides metadata used when your web app is installed on a\n      user\u0027s mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/\n    --\u003E\n    \u003Clink rel=\u0022manifest\u0022 href=\u0022/manifest.json\u0022 /\u003E\n    \u003C!--\n      Notice the use of  in the tags above.\n      It will be replaced with the URL of the \u0060public\u0060 folder during the build.\n      Only files inside the \u0060public\u0060 folder can be referenced from the HTML.\n\n      Unlike \u0022/favicon.ico\u0022 or \u0022favicon.ico\u0022, \u0022/favicon.ico\u0022 will\n      work correctly both with client-side routing and a non-root public URL.\n      Learn how to configure a non-root public URL by running \u0060npm run build\u0060.\n    --\u003E\n    \u003Ctitle\u003EReact App\u003C/title\u003E\n  \u003Cscript defer src=\u0022/static/js/bundle.js\u0022\u003E\u003C/script\u003E\u003C/head\u003E\n  \u003Cbody\u003E\n    \u003Cnoscript\u003EYou need to enable JavaScript to run this app.\u003C/noscript\u003E\n    \u003Cdiv id=\u0022root\u0022\u003E\u003C/div\u003E\n    \u003C!--\n      This HTML file is a template.\n      If you open it directly in the browser, you will see an empty page.\n\n      You can add webfonts, meta tags, or analytics to this file.\n      The build step will place the bundled scripts into the \u003Cbody\u003E tag.\n\n      To begin the development, run \u0060npm start\u0060 or \u0060yarn start\u0060.\n      To create a production bundle, use \u0060npm run build\u0060 or \u0060yarn build\u0060.\n    --\u003E\n  \u003C/body\u003E\n\u003C/html\u003E\n\n--- server output ---\n\r\n\u003E client@0.1.0 start\r\n\u003E react-scripts start\r\n\r\n(node:33836) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead\r\n(Use \u0060node --trace-deprecation ...\u0060 to show where the warning was created)\r\nBrowserslist: caniuse-lite is outdated. Please run:\r\n  npx update-browserslist-db@latest\r\n  Why you should do it regularly: https://github.com/browserslist/update-db#readme\r\n(node:33836) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: \u0027onAfterSetupMiddleware\u0027 option is deprecated. Please use the \u0027setupMiddlewares\u0027 option.\r\n(node:33836) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: \u0027onBeforeSetupMiddleware\u0027 option is deprecated. Please use the \u0027setupMiddlewares\u0027 option.\r\nStarting the development server...\r\n\r\nCompiled successfully!\r\n\r\nYou can now view client in the browser.\r\n\r\n  Local:            http://localhost:3001\r\n  On Your Network:  http://192.168.0.102:3001\r\n\r\nNote that the development build is not optimized.\r\nTo create a production build, use npm run build.\r\n\r\nwebpack compiled \u001B[1m\u001B[32msuccessfully\u001B[39m\u001B[22m\r\n",
+        "durationMs": 8394
+      }
+    ],
+    "executions": [
+      {
+        "source": "production-build",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "args": [
+          "run",
+          "build"
+        ],
+        "cwd": "C:\\Users\\Huyen\\Downloads\\L\u01B0u tr\u1EEF\\L\u01B0u tr\u1EEF\\fullstacknodejs\\fullstack-phong-tro-123-master\\fullstack-phong-tro-123-master\\client",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32",
+        "nodeExecutable": "C:\\Program Files\\nodejs\\node.EXE",
+        "nodeVersion": "v24.14.0",
+        "packageManager": "npm",
+        "packageManagerExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "packageManagerVersion": "10.8.2",
+        "cleanup": {
+          "RootProcessId": 29384,
+          "Completed": true,
+          "ProcessesObserved": 8,
+          "ProcessesTerminated": 1,
+          "Failure": null
+        }
+      },
+      {
+        "source": "tests-pass",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "args": [
+          "test",
+          "--",
+          "--watchAll=false"
+        ],
+        "cwd": "C:\\Users\\Huyen\\Downloads\\L\u01B0u tr\u1EEF\\L\u01B0u tr\u1EEF\\fullstacknodejs\\fullstack-phong-tro-123-master\\fullstack-phong-tro-123-master\\client",
+        "env": {
+          "CI": "true"
+        },
+        "prependPath": [],
+        "platform": "win32",
+        "nodeExecutable": "C:\\Program Files\\nodejs\\node.EXE",
+        "nodeVersion": "v24.14.0",
+        "packageManager": "npm",
+        "packageManagerExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "packageManagerVersion": "10.8.2",
+        "cleanup": {
+          "RootProcessId": 5004,
+          "Completed": true,
+          "ProcessesObserved": 22,
+          "ProcessesTerminated": 1,
+          "Failure": null
+        }
+      },
+      {
+        "source": "frontend-serves-home",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "args": [
+          "start"
+        ],
+        "cwd": "C:\\Users\\Huyen\\Downloads\\L\u01B0u tr\u1EEF\\L\u01B0u tr\u1EEF\\fullstacknodejs\\fullstack-phong-tro-123-master\\fullstack-phong-tro-123-master\\client",
+        "env": {
+          "PORT": "3001",
+          "BROWSER": "none"
+        },
+        "prependPath": [],
+        "platform": "win32",
+        "nodeExecutable": "C:\\Program Files\\nodejs\\node.EXE",
+        "nodeVersion": "v24.14.0",
+        "packageManager": "npm",
+        "packageManagerExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "packageManagerVersion": "10.8.2",
+        "cleanup": {
+          "RootProcessId": 26164,
+          "Completed": true,
+          "ProcessesObserved": 12,
+          "ProcessesTerminated": 6,
+          "Failure": null
+        }
+      }
+    ]
+  }
+}

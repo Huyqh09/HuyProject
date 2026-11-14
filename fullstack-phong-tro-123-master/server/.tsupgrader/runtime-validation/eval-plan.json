@@ -1,0 +1,29 @@
+{
+  "projectType": "server",
+  "setup": [],
+  "assertions": [
+    {
+      "name": "tests-pass",
+      "kind": "process",
+      "command": "npm",
+      "args": ["test"],
+      "verificationMethod": "test-results",
+      "expected": "0",
+      "timeoutSeconds": 120
+    },
+    {
+      "name": "smart-search-filters-by-province-and-price-range",
+      "kind": "http-probe",
+      "startCommand": "npm",
+      "startArgs": ["start"],
+      "env": {
+        "PORT": "5017",
+        "CLIENT_URL": "http://localhost:3000"
+      },
+      "url": "http://localhost:5017/api/v1/post/smart-search?priceNumber=3%2C5&provinceCode=VN-HO-CHI-MINH",
+      "verificationMethod": "output-contains",
+      "expected": "\"provinceCode\":\"VN-HO-CHI-MINH\"",
+      "timeoutSeconds": 120
+    }
+  ]
+}

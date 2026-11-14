@@ -1,0 +1,99 @@
+{
+  "planHash": "9ec43868f4fee6e6cd878dd9ac6ce7883d39a287b60cba56b51f8027f92408fd",
+  "phase": "standalone",
+  "recordedAtUtc": "2026-11-14T01:04:46.6361055Z",
+  "retryCount": 2,
+  "resetBaseline": false,
+  "complete": true,
+  "result": {
+    "setupSucceeded": true,
+    "setupDurationMs": 0,
+    "setupFailureOutput": null,
+    "assertions": [
+      {
+        "name": "tests-pass",
+        "kind": "process",
+        "verificationMethod": "test-results",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E server@1.0.0 test\r\n\u003E node --test\r\n\r\n\u25B6 smart-search numeric ranges\r\n  \u2714 parses repeated query values as inclusive bounds (1.0405ms)\r\n  \u2714 parses comma-delimited query values (0.1123ms)\r\n  \u2714 treats a single value as a lower-bound filter (0.1046ms)\r\n  \u2714 ignores invalid and empty bounds (0.1378ms)\r\n\u2714 smart-search numeric ranges (2.1665ms)\r\n\u2139 tests 4\r\n\u2139 suites 1\r\n\u2139 pass 4\r\n\u2139 fail 0\r\n\u2139 cancelled 0\r\n\u2139 skipped 0\r\n\u2139 todo 0\r\n\u2139 duration_ms 117.017\r\n",
+        "durationMs": 631,
+        "testResults": {
+          "testFramework": "unknown",
+          "runnerDetectedFrom": "none",
+          "testsTotal": 0,
+          "testsPassed": 0,
+          "testsFailed": 0,
+          "testsSkipped": 0,
+          "parseFailed": true
+        }
+      },
+      {
+        "name": "smart-search-filters-by-province-and-price-range",
+        "kind": "http-probe",
+        "verificationMethod": "output-contains",
+        "passed": false,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": null,
+        "outputSample": "\u003Cprobe error: A task was canceled.\u003E",
+        "durationMs": 120014
+      }
+    ],
+    "executions": [
+      {
+        "source": "tests-pass",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "args": [
+          "test"
+        ],
+        "cwd": "C:\\Users\\Huyen\\Downloads\\L\u01B0u tr\u1EEF\\L\u01B0u tr\u1EEF\\fullstacknodejs\\fullstack-phong-tro-123-master\\fullstack-phong-tro-123-master\\server",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32",
+        "nodeExecutable": "C:\\Program Files\\nodejs\\node.EXE",
+        "nodeVersion": "v24.14.0",
+        "packageManager": "npm",
+        "packageManagerExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "packageManagerVersion": "10.8.2",
+        "cleanup": {
+          "RootProcessId": 12328,
+          "Completed": true,
+          "ProcessesObserved": 8,
+          "ProcessesTerminated": 1,
+          "Failure": null
+        }
+      },
+      {
+        "source": "smart-search-filters-by-province-and-price-range",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "args": [
+          "start"
+        ],
+        "cwd": "C:\\Users\\Huyen\\Downloads\\L\u01B0u tr\u1EEF\\L\u01B0u tr\u1EEF\\fullstacknodejs\\fullstack-phong-tro-123-master\\fullstack-phong-tro-123-master\\server",
+        "env": {
+          "PORT": "5017",
+          "CLIENT_URL": "http://localhost:3000"
+        },
+        "prependPath": [],
+        "platform": "win32",
+        "nodeExecutable": "C:\\Program Files\\nodejs\\node.EXE",
+        "nodeVersion": "v24.14.0",
+        "packageManager": "npm",
+        "packageManagerExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "packageManagerVersion": "10.8.2",
+        "cleanup": {
+          "RootProcessId": 18068,
+          "Completed": true,
+          "ProcessesObserved": 11,
+          "ProcessesTerminated": 5,
+          "Failure": null
+        }
+      }
+    ]
+  }
+}
